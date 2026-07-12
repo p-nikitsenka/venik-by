@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ВЕНИК, ВДГ — гербицид против борщевика Сосновского | Беларусь</title>
+<meta name="description" content="ВЕНИК, ВДГ — зарегистрированный в Республике Беларусь гербицид сплошного действия против борщевика Сосновского. Одна обработка. Защита до 36 месяцев.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E1512;
+  --paper:#F6F7F3;
+  --card:#FFFFFF;
+  --green:#1E6B3C;
+  --green-dark:#14532D;
+  --green-deep:#0C2E1C;
+  --amber:#C2410C;
+  --amber-soft:#FDF0E7;
+  --line:#DCE3DB;
+  --muted:#5B6660;
+  --radius:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Golos Text',system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+
+/* ---------- top bar ---------- */
+.topbar{
+  background:var(--green-deep);
+  color:#E7F0E9;
+  font-size:14px;
+  padding:9px 0;
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{text-decoration:none;font-weight:600;white-space:nowrap}
+.topbar a:hover{text-decoration:underline}
+
+/* ---------- hero ---------- */
+.hero{
+  background:var(--green-deep);
+  color:#F3F7F2;
+  position:relative;
+  overflow:hidden;
+  padding:72px 0 84px;
+}
+.hero .wrap{position:relative;z-index:2}
+.umbel{
+  position:absolute;
+  right:-120px;
+  top:-80px;
+  width:560px;
+  height:560px;
+  opacity:.14;
+  z-index:1;
+  pointer-events:none;
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:600;
+  color:#9FC6A9;
+  margin-bottom:22px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:#9FC6A9;display:inline-block}
+h1{
+  font-size:clamp(32px,5.6vw,58px);
+  font-weight:900;
+  line-height:1.08;
+  letter-spacing:-.015em;
+  max-width:15ch;
+  margin-bottom:20px;
+}
+.hero p.lead{
+  font-size:clamp(17px,2.2vw,21px);
+  color:#CFE0D2;
+  max-width:52ch;
+  margin-bottom:34px;
+}
+.hero p.lead strong{color:#fff}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn-call{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  background:#fff;
+  color:var(--green-deep);
+  text-decoration:none;
+  font-weight:800;
+  font-size:clamp(18px,2.4vw,23px);
+  padding:16px 28px;
+  border-radius:var(--radius);
+  transition:transform .18s ease, box-shadow .18s ease;
+  cursor:pointer;
+  box-shadow:0 6px 24px rgba(0,0,0,.25);
+}
+.btn-call:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.btn-call svg{flex:none}
+.cta-note{font-size:14px;color:#9FC6A9}
+.reg-badge{
+  margin-top:38px;
+  display:inline-flex;
+  align-items:flex-start;
+  gap:12px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:var(--radius);
+  padding:14px 18px;
+  font-size:14.5px;
+  color:#DDEBDF;
+  max-width:520px;
+}
+.reg-badge svg{flex:none;margin-top:2px}
+
+/* ---------- sections ---------- */
+section{padding:72px 0}
+.sec-label{
+  font-size:13px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--green);
+  margin-bottom:14px;
+}
+h2{
+  font-size:clamp(26px,3.6vw,38px);
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-.01em;
+  margin-bottom:18px;
+  max-width:24ch;
+}
+.sub{font-size:17px;color:var(--muted);max-width:60ch;margin-bottom:36px}
+
+/* ---------- pain ---------- */
+.pain .sec-label{color:var(--amber)}
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pain-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-top:3px solid var(--amber);
+  border-radius:var(--radius);
+  padding:26px 24px;
+}
+.pain-card h3{font-size:18px;font-weight:700;margin-bottom:10px}
+.pain-card p{font-size:15.5px;color:var(--muted)}
+
+/* ---------- solution ---------- */
+.solution{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sol-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.sol-points{display:flex;flex-direction:column;gap:22px;margin-top:8px}
+.sol-point{display:flex;gap:16px;align-items:flex-start}
+.sol-point svg{flex:none;margin-top:3px}
+.sol-point h3{font-size:17px;font-weight:700;margin-bottom:4px}
+.sol-point p{font-size:15.5px;color:var(--muted)}
+.stat-stack{display:flex;flex-direction:column;gap:16px}
+.stat{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px 26px;
+}
+.stat .num{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:clamp(34px,4.5vw,46px);
+  font-weight:600;
+  color:var(--green-dark);
+  line-height:1.05;
+}
+.stat .num small{font-size:.45em;font-weight:500;color:var(--muted)}
+.stat .cap{font-size:14.5px;color:var(--muted);margin-top:6px}
+.stat.hi{background:var(--green-deep);border-color:var(--green-deep)}
+.stat.hi .num{color:#fff}
+.stat.hi .cap{color:#B9D2BF}
+
+/* ---------- registry verbatim ---------- */
+.registry-doc{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:4px solid var(--green);
+  border-radius:var(--radius);
+  padding:30px 32px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:14.5px;
+  line-height:1.7;
+}
+.registry-doc .doc-head{
+  font-size:12.5px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+  border-bottom:1px dashed var(--line);
+  padding-bottom:12px;
+  margin-bottom:16px;
+}
+.registry-doc dl{display:grid;grid-template-columns:180px 1fr;gap:10px 20px}
+.registry-doc dt{color:var(--muted)}
+.registry-doc dd{font-weight:500}
+.reg-footnote{font-size:14px;color:var(--muted);margin-top:16px;max-width:70ch}
+
+/* ---------- calculator ---------- */
+.calc{background:var(--green-deep);color:#F3F7F2}
+.calc .sec-label{color:#9FC6A9}
+.calc h2{color:#fff}
+.calc .sub{color:#B9D2BF}
+.calc-box{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:14px;
+  padding:34px;
+  display:grid;
+  grid-template-columns:1fr 1.3fr;
+  gap:40px;
+  align-items:center;
+}
+.calc-input label{display:block;font-size:14px;color:#B9D2BF;margin-bottom:10px;font-weight:600}
+.area-field{display:flex;align-items:baseline;gap:12px}
+.area-field input{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:clamp(38px,6vw,56px);
+  font-weight:600;
+  background:transparent;
+  border:none;
+  border-bottom:3px solid rgba(255,255,255,.35);
+  color:#fff;
+  width:100%;
+  max-width:220px;
+  padding:2px 0 6px;
+  outline:none;
+  transition:border-color .2s;
+}
+.area-field input:focus{border-color:#fff}
+.area-field input::-webkit-outer-spin-button,
+.area-field input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.area-field input[type=number]{-moz-appearance:textfield}
+.area-field .unit{font-size:20px;color:#B9D2BF;font-weight:600}
+.calc-hint{font-size:13.5px;color:#8FB59A;margin-top:14px;max-width:34ch}
+.calc-out{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.out-cell{
+  background:rgba(255,255,255,.07);
+  border-radius:10px;
+  padding:18px 20px;
+}
+.out-cell .v{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:clamp(24px,3.2vw,32px);
+  font-weight:600;
+  color:#fff;
+  line-height:1.1;
+}
+.out-cell .v small{font-size:.5em;font-weight:500;color:#B9D2BF}
+.out-cell .k{font-size:13.5px;color:#9FC6A9;margin-top:5px}
+.out-cell.total{grid-column:1/-1;background:#fff}
+.out-cell.total .v{color:var(--green-deep)}
+.out-cell.total .k{color:var(--muted)}
+.calc-cta{grid-column:1/-1;margin-top:6px}
+.btn-call.green{background:#fff;color:var(--green-deep);width:100%;justify-content:center}
+
+/* ---------- audience ---------- */
+.aud-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.aud-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px 18px;
+  text-align:center;
+  font-size:15px;
+  font-weight:600;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+.aud-card svg{color:var(--green)}
+
+/* ---------- pack / price ---------- */
+.pack{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pack-cell{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px 24px;
+  background:var(--paper);
+}
+.pack-cell .v{font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:var(--green-dark)}
+.pack-cell .k{font-size:14.5px;color:var(--muted);margin-top:6px}
+
+/* ---------- final ---------- */
+.final{padding:88px 0;text-align:center}
+.final h2{margin:0 auto 14px}
+.final .sub{margin:0 auto 34px}
+.phone-big{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:clamp(26px,5vw,44px);
+  font-weight:600;
+  color:var(--green-deep);
+  text-decoration:none;
+  display:inline-block;
+  margin-bottom:26px;
+}
+.phone-big:hover{text-decoration:underline}
+
+/* ---------- footer ---------- */
+footer{
+  background:var(--ink);
+  color:#A9B4AD;
+  font-size:14px;
+  padding:36px 0 44px;
+}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer .safety{max-width:46ch;font-size:13px;color:#7E8A82;margin-top:10px}
+footer strong{color:#E2E8E3}
+
+/* ---------- sticky mobile call ---------- */
+.sticky-call{
+  display:none;
+  position:fixed;
+  left:12px;right:12px;bottom:12px;
+  z-index:50;
+}
+.sticky-call a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  background:var(--green);
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  font-size:17px;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 8px 24px rgba(12,46,28,.35);
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  html{scroll-behavior:auto}
+}
+@media(max-width:900px){
+  .sol-grid{grid-template-columns:1fr;gap:34px}
+  .pain-grid,.pack-grid{grid-template-columns:1fr}
+  .aud-grid{grid-template-columns:repeat(2,1fr)}
+  .calc-box{grid-template-columns:1fr;padding:26px 22px}
+  .registry-doc dl{grid-template-columns:1fr;gap:2px 0}
+  .registry-doc dt{margin-top:12px}
+  section{padding:56px 0}
+  .hero{padding:56px 0 64px}
+  .sticky-call{display:block}
+  footer{padding-bottom:96px}
+}
+@media(max-width:480px){
+  .aud-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>ВЕНИК, ВДГ · гербицид сплошного действия</span>
+    <a href="tel:+375296565252">+375 29 656-52-52</a>
+  </div>
+</div>
+
+<header class="hero">
+  <svg class="umbel" viewBox="0 0 200 200" aria-hidden="true">
+    <g stroke="#FFFFFF" stroke-width="1.1" fill="none">
+      <line x1="100" y1="200" x2="100" y2="110"/>
+      <g id="rays">
+        <line x1="100" y1="110" x2="30" y2="40"/>
+        <line x1="100" y1="110" x2="60" y2="26"/>
+        <line x1="100" y1="110" x2="100" y2="18"/>
+        <line x1="100" y1="110" x2="140" y2="26"/>
+        <line x1="100" y1="110" x2="170" y2="40"/>
+        <line x1="100" y1="110" x2="52" y2="60"/>
+        <line x1="100" y1="110" x2="148" y2="60"/>
+      </g>
+    </g>
+    <g fill="#FFFFFF">
+      <circle cx="30" cy="40" r="4"/><circle cx="60" cy="26" r="4"/>
+      <circle cx="100" cy="18" r="4"/><circle cx="140" cy="26" r="4"/>
+      <circle cx="170" cy="40" r="4"/><circle cx="52" cy="60" r="3"/>
+      <circle cx="148" cy="60" r="3"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow">Для юридических лиц · Республика Беларусь</div>
+    <h1>Борщевик Сосновского на вашей территории?</h1>
+    <p class="lead"><strong>ВЕНИК, ВДГ</strong> — зарегистрированный гербицид сплошного действия. Одна обработка за сезон — защита до 36 месяцев.</p>
+    <div class="cta-row">
+      <a class="btn-call" href="tel:+375296565252">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +375 29 656-52-52
+      </a>
+      <span class="cta-note">Рассчитаем норму под ваш объект<br>за один звонок</span>
+    </div>
+    <div class="reg-badge">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9FC6A9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      Зарегистрирован в Государственном реестре средств защиты растений и удобрений Республики Беларусь
+    </div>
+  </div>
+</header>
+
+<section class="pain">
+  <div class="wrap">
+    <div class="sec-label">Почему тянуть нельзя</div>
+    <h2>Предписание уже выдали — или выдадут</h2>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <h3>Штрафы для юрлиц</h3>
+        <p>За непринятие мер по борьбе с борщевиком Сосновского землепользователь несёт административную ответственность.</p>
+      </div>
+      <div class="pain-card">
+        <h3>Косить — бесполезно</h3>
+        <p>После скашивания борщевик отрастает за 2–3 недели, а семенной запас в почве сохраняет всхожесть годами.</p>
+      </div>
+      <div class="pain-card">
+        <h3>Опасность для людей</h3>
+        <p>Сок борщевика вызывает тяжёлые ожоги. Ответственность за инциденты на территории — на землепользователе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="solution">
+  <div class="wrap">
+    <div class="sol-grid">
+      <div>
+        <div class="sec-label">Решение</div>
+        <h2>Почему достаточно одной обработки</h2>
+        <div class="sol-points">
+          <div class="sol-point">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6B3C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <div>
+              <h3>Двойное действие — через листья и почву</h3>
+              <p>Сульфометурон-метил, 750 г/кг. Уничтожает вегетирующие растения и создаёт почвенный экран.</p>
+            </div>
+          </div>
+          <div class="sol-point">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6B3C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <div>
+              <h3>Не даёт взойти семенному запасу</h3>
+              <p>Длительное почвенное последействие блокирует прорастание семян борщевика — главную причину повторного зарастания.</p>
+            </div>
+          </div>
+          <div class="sol-point">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6B3C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <div>
+              <h3>Сплошное действие</h3>
+              <p>Работает против однолетних и многолетних злаковых и двудольных — территория очищается полностью, а не выборочно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stat-stack">
+        <div class="stat hi">
+          <div class="num">до 36 <small>месяцев</small></div>
+          <div class="cap">защита территории после одной обработки</div>
+        </div>
+        <div class="stat">
+          <div class="num">1</div>
+          <div class="cap">кратность обработок по регламенту</div>
+        </div>
+        <div class="stat">
+          <div class="num">750 <small>г/кг</small></div>
+          <div class="cap">сульфометурон-метил — действующее вещество</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="registry">
+  <div class="wrap">
+    <div class="sec-label">Официальный регламент</div>
+    <h2>Как в реестре — слово в слово</h2>
+    <div class="registry-doc">
+      <div class="doc-head">Государственный реестр средств защиты растений и удобрений Республики Беларусь</div>
+      <dl>
+        <dt>Препарат</dt>
+        <dd>ВЕНИК, ВДГ (сульфометурон-метил, 750 г/кг)</dd>
+        <dt>Норма расхода</dt>
+        <dd>0,12–0,35</dd>
+        <dt>Где применяется</dt>
+        <dd>Земли несельскохозяйственного пользования (трассы газо- и нефтепроводов, насыпи и полосы отчуждения железных и шоссейных дорог, аэродромы, контрольно-следовые полосы и другие промышленные объекты) и в населенных пунктах</dd>
+        <dt>Против чего</dt>
+        <dd>Однолетние и многолетние злаковые и двудольные, в т. ч. золотарник канадский, мелколепестник канадский, борщевик Сосновского</dd>
+        <dt>Способ применения</dt>
+        <dd>Опрыскивание почвы и сорняков при высоте до 30 см</dd>
+        <dt>Кратность</dt>
+        <dd>1</dd>
+      </dl>
+    </div>
+    <p class="reg-footnote">Формулировки приведены дословно по Государственному реестру средств защиты растений и удобрений Республики Беларусь.</p>
+  </div>
+</section>
+
+<section class="calc" id="calc">
+  <div class="wrap">
+    <div class="sec-label">Калькулятор</div>
+    <h2>Сколько препарата нужно на вашу площадь</h2>
+    <p class="sub">Расчёт по максимальной норме расхода 0,35 кг/га. Отгрузка — флаконами по 0,5 кг.</p>
+    <div class="calc-box">
+      <div class="calc-input">
+        <label for="area">Площадь обработки</label>
+        <div class="area-field">
+          <input type="number" id="area" inputmode="decimal" min="0" step="0.1" value="10" aria-label="Площадь в гектарах">
+          <span class="unit">га</span>
+        </div>
+        <p class="calc-hint">Введите площадь — расчёт обновится автоматически.</p>
+      </div>
+      <div class="calc-out">
+        <div class="out-cell">
+          <div class="v" id="out-kg">3,5 <small>кг</small></div>
+          <div class="k">препарата (с округлением до фасовки)</div>
+        </div>
+        <div class="out-cell">
+          <div class="v" id="out-packs">7 <small>фл.</small></div>
+          <div class="k">флаконов по 0,5 кг</div>
+        </div>
+        <div class="out-cell total">
+          <div class="v" id="out-sum">2 065 <small>руб</small></div>
+          <div class="k">стоимость без НДС · 590 руб/кг</div>
+        </div>
+        <div class="calc-cta">
+          <a class="btn-call green" href="tel:+375296565252">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Заказать: +375 29 656-52-52
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="audience">
+  <div class="wrap">
+    <div class="sec-label">Для кого</div>
+    <h2>Кому ВЕНИК решает задачу</h2>
+    <div class="aud-grid">
+      <div class="aud-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        Коммунальные службы и сельисполкомы
+      </div>
+      <div class="aud-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V9l4-2v13M12 20V5l6 3v12"/></svg>
+        Промышленные объекты и энергетика
+      </div>
+      <div class="aud-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19 19 4M7 4h12v12M4 12l8 8"/></svg>
+        Железные и автомобильные дороги
+      </div>
+      <div class="aud-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+        Аэродромы
+      </div>
+      <div class="aud-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11z"/><circle cx="12" cy="11" r="3"/></svg>
+        Землевладельцы и арендаторы
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pack">
+  <div class="wrap">
+    <div class="sec-label">Фасовка и цена</div>
+    <h2>Просто посчитать, просто купить</h2>
+    <div class="pack-grid">
+      <div class="pack-cell">
+        <div class="v">0,5 кг</div>
+        <div class="k">флакон — удобная фасовка для точной дозировки</div>
+      </div>
+      <div class="pack-cell">
+        <div class="v">590 руб/кг</div>
+        <div class="k">без НДС · отгрузка кратно 0,5 кг</div>
+      </div>
+      <div class="pack-cell">
+        <div class="v">Любой объём</div>
+        <div class="k">от одного флакона до партии под весь объект</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Рассчитаем норму под ваш объект за один звонок</h2>
+    <p class="sub">Подскажем сроки обработки, норму расхода и нужное количество препарата под вашу площадь.</p>
+    <a class="phone-big" href="tel:+375296565252">+375 29 656-52-52</a>
+    <div>
+      <a class="btn-call" style="background:var(--green);color:#fff" href="tel:+375296565252">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Позвонить
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>ООО «Китайские препараты»</strong><br>
+      УНП 693336037<br>
+      220035, г. Минск, ул. Тимирязева, 65а, офис 410<br>
+      <a href="tel:+375296565252" style="color:#E2E8E3;text-decoration:none">+375 29 656-52-52</a>
+    </div>
+    <div>
+      <strong>ВЕНИК, ВДГ</strong><br>
+      Гербицид сплошного действия<br>
+      Сульфометурон-метил, 750 г/кг
+      <p class="safety">Применяйте средства защиты растений с соблюдением регламента и требований безопасности. Перед применением ознакомьтесь с тарной этикеткой.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a href="tel:+375296565252">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Позвонить: +375 29 656-52-52
+  </a>
+</div>
+
+<script>
+(function(){
+  var RATE = 0.35;      // кг/га, максимальная норма
+  var PACK = 0.5;       // кг во флаконе
+  var PRICE = 590;      // руб/кг без НДС
+  var input = document.getElementById('area');
+  var outKg = document.getElementById('out-kg');
+  var outPacks = document.getElementById('out-packs');
+  var outSum = document.getElementById('out-sum');
+
+  function fmt(n, dec){
+    return n.toLocaleString('ru-RU', {minimumFractionDigits: 0, maximumFractionDigits: dec});
+  }
+  function calc(){
+    var area = parseFloat(String(input.value).replace(',', '.'));
+    if (!isFinite(area) || area <= 0){
+      outKg.innerHTML = '— <small>кг</small>';
+      outPacks.innerHTML = '— <small>фл.</small>';
+      outSum.innerHTML = '— <small>руб</small>';
+      return;
+    }
+    var rawKg = area * RATE;
+    var packs = Math.max(1, Math.ceil(rawKg / PACK));
+    var kg = packs * PACK;
+    var sum = kg * PRICE;
+    outKg.innerHTML = fmt(kg, 1) + ' <small>кг</small>';
+    outPacks.innerHTML = fmt(packs, 0) + ' <small>фл.</small>';
+    outSum.innerHTML = fmt(sum, 0) + ' <small>руб</small>';
+  }
+  input.addEventListener('input', calc);
+  calc();
+})();
+</script>
+
+</body>
+</html>
